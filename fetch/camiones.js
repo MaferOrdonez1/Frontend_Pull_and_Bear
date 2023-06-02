@@ -10,7 +10,9 @@ const color = document.getElementById('color')
 var opcion = ''
 
 btnCrear.addEventListener('click', ()=>{
-    nombre.value = ''
+    marca.value = ''
+    num_marca.value = ''
+    color.value = ''
     modalCamiones.show()
     opcion = 'crear'
 })
@@ -19,7 +21,7 @@ btnCrear.addEventListener('click', ()=>{
 const mostrar = (camiones) => {
     camiones.forEach(camiones => {
         resultados += `<tr>
-                            <td>${Camiones.id}</td>
+                            <td>${camiones.id}</td>
                             <td>${camiones.marca}</td>
                             <td>${camiones.num_marca}</td>
                             <td>${camiones.color}</td>
@@ -85,7 +87,7 @@ on(document, 'click', '.btnEditar', e => {
 })
 
 //Procedimiento para Crear y Editar
-formProducto.addEventListener('submit', (e)=>{
+formCamiones.addEventListener('submit', (e)=>{
     e.preventDefault()
     if(opcion=='crear'){        
         //console.log('OPCION CREAR')

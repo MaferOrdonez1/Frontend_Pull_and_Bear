@@ -96,7 +96,7 @@ on(document, 'click', '.btnEditar', e => {
 })
 
 //Procedimiento para Crear y Editar
-formProducto.addEventListener('submit', (e)=>{
+formEmpleado.addEventListener('submit', (e)=>{
     e.preventDefault()
     if(opcion=='crear'){        
         //console.log('OPCION CREAR')

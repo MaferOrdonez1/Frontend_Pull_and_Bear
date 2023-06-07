@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
 
 
-    <title>Bodega</title>
+    <title>Camiones</title>
     <style>
         body{
             background-color: #f7f6f6;
@@ -32,7 +32,7 @@
       <a  href="index.html">
       <img src="img/pull_and_bear.png" alt="Logotipo pull_and_bear">
       </a>     
-
+    
       <nav class="navegacion">
         <a href="Nosotros.html">Nosotros</a>
         <a href="menu.html">Menu</a>
@@ -44,18 +44,19 @@
     </header>
 
     <section class="imagen-contacto">
-      <div class="contenedor contenido-contacto"></div>
+        <div class="contenedor contenido-contacto"></div>
     </section>
 
-    <h1 class="fw-300 centrar-texto"> Registro Bodegas</h1>
+    <h1 class="fw-300 centrar-texto"> Registro Camiones</h1>
     <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">        
-        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalBodega">Crear</button>
-        <table id="tablaBodegas" class="table mt-2 table-bordered table-striped">
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalCamiones">Crear</button>
+        <table id="tablaCamiones" class="table mt-2 table-bordered table-striped">
             <thead>
                 <tr class="text-center">
                   <th>ID</th>
-                  <th>nombre</th>
-                  <th>direccion</th>
+                  <th>marca</th>
+                  <th>num_marca</th>
+                  <th>color</th>
                 </tr>
             </thead>
             <tbody>                
@@ -63,22 +64,26 @@
         </table>
     </div>
 
-<div id="modalBodega" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div id="modalCamiones" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Bodega</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Camiones</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="nombre" class="col-form-label">nombre:</label>
-            <input id="nombre" type="text" class="form-control" autofocus>
+            <label for="marca" class="col-form-label">marca:</label>
+            <input id="marca" type="text" class="form-control" autofocus>
           </div>
           <div class="mb-3">
-            <label for="direccion" class="col-form-label">direccion</label>
-            <input id="direccion" type="number" class="form-control">
+            <label for="num_marca" class="col-form-label">numero de marca</label>
+            <input id="num_marca" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="color" class="col-form-label">color</label>
+            <input id="color" type="number" class="form-control">
           </div>
       </div>
       <div class="modal-footer">
@@ -94,5 +99,5 @@
     <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-<script src="bodega.js"></script>
+<script src="camiones.js"></script>
   </body>

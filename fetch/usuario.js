@@ -1,4 +1,4 @@
-const url = ''
+const url = 'http://localhost:3008/api/usuario/'
 const contenedor = document.querySelector('tbody')
 let resultados = ''
 

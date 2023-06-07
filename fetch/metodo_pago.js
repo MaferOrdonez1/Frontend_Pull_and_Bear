@@ -1,4 +1,4 @@
-const url = 'http://localhost:3000/api/articulos/'
+const url = 'http://localhost:3008/api/metodo_pago/'
 const contenedor = document.querySelector('tbody')
 let resultados = ''
 

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
 
 
-    <title>Bodega</title>
+    <title>Proveedores</title>
     <style>
         body{
             background-color: #f7f6f6;
@@ -32,7 +32,7 @@
       <a  href="index.html">
       <img src="img/pull_and_bear.png" alt="Logotipo pull_and_bear">
       </a>     
-
+          
       <nav class="navegacion">
         <a href="Nosotros.html">Nosotros</a>
         <a href="menu.html">Menu</a>
@@ -44,18 +44,24 @@
     </header>
 
     <section class="imagen-contacto">
-      <div class="contenedor contenido-contacto"></div>
+        <div class="contenedor contenido-contacto"></div>
     </section>
 
-    <h1 class="fw-300 centrar-texto"> Registro Bodegas</h1>
+    <h1 class="fw-300 centrar-texto"> Registro proveedores</h1>
     <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">        
-        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalBodega">Crear</button>
-        <table id="tablaBodegas" class="table mt-2 table-bordered table-striped">
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#modalProveedores">Crear</button>
+        <table id="tablaProveedores" class="table mt-2 table-bordered table-striped">
             <thead>
                 <tr class="text-center">
                   <th>ID</th>
                   <th>nombre</th>
+                  <th>fecha</th>
+                  <th>ciudad</th>
+                  <th>estado</th>
                   <th>direccion</th>
+                  <th>telefono</th>
+                  <th>email</th>
+                  <th>pais</th>
                 </tr>
             </thead>
             <tbody>                
@@ -63,11 +69,11 @@
         </table>
     </div>
 
-<div id="modalBodega" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div id="modalProveedores" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header bg-primary text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Bodega</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Proveedores</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -77,8 +83,32 @@
             <input id="nombre" type="text" class="form-control" autofocus>
           </div>
           <div class="mb-3">
+            <label for="fecha" class="col-form-label">fecha</label>
+            <input id="fecha" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="ciudad" class="col-form-label">ciudad</label>
+            <input id="ciudad" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="estado" class="col-form-label">estado</label>
+            <input id="estado" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
             <label for="direccion" class="col-form-label">direccion</label>
             <input id="direccion" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="col-form-label">telefono</label>
+            <input id="telefono" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">email</label>
+            <input id="email" type="number" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="pais" class="col-form-label">pais</label>
+            <input id="pais" type="number" class="form-control">
           </div>
       </div>
       <div class="modal-footer">
@@ -94,5 +124,5 @@
     <!-- JavaScript -->
 <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 
-<script src="bodega.js"></script>
+<script src="proveedores.js"></script>
   </body>
